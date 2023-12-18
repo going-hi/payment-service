@@ -5,15 +5,15 @@ import { CreateUserDto } from './dto/create-user.dto';
 @UsePipes(new ValidationPipe())
 @Controller('user')
 export class UserController {
-  constructor(private userService: UserService) {}
+    constructor(private userService: UserService) {}
 
-  @Post()
-  create(@Body() createUserDto: CreateUserDto) {
-    return this.userService.create(createUserDto);
-  }
+    @Post()
+    create(@Body() createUserDto: CreateUserDto) {
+        return this.userService.create(createUserDto);
+    }
 
-  @Get()
-  hello() {
-    return 'hello world';
-  }
+    @Get()
+    hello() {
+        return 'hello world';
+    }
 }
