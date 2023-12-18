@@ -7,6 +7,6 @@ import { PaymentModule } from 'src/payment/payment.module';
 @Module({
   imports: [PaymentModule],
   controllers: [OrderController],
-  providers: [OrderService, PrismaService],
+  providers: [OrderService, PrismaService]
 })
 export class OrderModule {}
