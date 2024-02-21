@@ -1,6 +1,6 @@
 export enum EnumOrderStatus {
-  REFUND = "Refund",
-  PENDING = "Pending",
-  PAYED = "Payed",
-  CANCELED = "Canceled"
+    REFUND = 'Refund',
+    PENDING = 'Pending',
+    PAYED = 'Payed',
+    CANCELED = 'Canceled'
 }

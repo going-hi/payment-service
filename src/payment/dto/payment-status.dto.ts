@@ -1,36 +1,34 @@
 class AmountPayment {
-    value: string
-    currency: string
+    value: string;
+    currency: string;
 }
 
-
 class ObjectPayment {
-    id: string
-    status: string
+    id: string;
+    status: string;
     // при успешном возврате
-    payment_id?: string
-    
-    amount: AmountPayment
-    description: string
+    payment_id?: string;
+
+    amount: AmountPayment;
+    description: string;
     payment_method: {
-        type: string
-        id: number
-        saved: boolean
-        title: string
-        card: object
-    }
-    created_at: string
-    expires_at: string
+        type: string;
+        id: number;
+        saved: boolean;
+        title: string;
+        card: object;
+    };
+    created_at: string;
+    expires_at: string;
 }
 
 export class PaymentStatusDto {
-    event: 
+    event:
         | 'payment.succeeded'
         | 'payment.waiting_for_capture'
         | 'payment.canceled'
-        | 'refund.succeeded'
+        | 'refund.succeeded';
 
-    type: string
-    object: ObjectPayment
+    type: string;
+    object: ObjectPayment;
 }
-

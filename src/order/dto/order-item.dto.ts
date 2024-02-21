@@ -1,12 +1,12 @@
-import { IsInt, IsNumber } from "class-validator"
+import { IsInt, IsNumber } from 'class-validator';
 
 export class OrderItemDto {
     @IsInt()
-    quantity: number
+    quantity: number;
 
     @IsNumber()
-    price: number
+    price: number;
 
     @IsInt()
-    productId: number
+    productId: number;
 }

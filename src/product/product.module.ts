@@ -5,8 +5,8 @@ import { PrismaService } from 'src/common/prisma.service';
 import { FileModule } from 'src/file/file.module';
 
 @Module({
-  imports: [FileModule],
-  controllers: [ProductController],
-  providers: [ProductService, PrismaService],
+    imports: [FileModule],
+    controllers: [ProductController],
+    providers: [ProductService, PrismaService]
 })
 export class ProductModule {}
