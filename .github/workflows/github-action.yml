@@ -18,12 +18,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: install yarn
         run: npm install yarn
-        working-directory: './p'
       - name: install modules
         run: yarn install
-        working-directory: './p'
-      - name: build 
-        working-directory: './p'
+      - name: build
         run: yarn run build
   
   deploy:
